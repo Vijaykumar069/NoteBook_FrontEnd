@@ -39,7 +39,7 @@ function Register() {
         validationSchema: registerSchema,
         onSubmit: async (values) => {
             const {username, email, password} = values
-            const response = await fetch("https://notebook-backend-76vn.onrender.com/api/auth/createuser", {
+            const response = await fetch("https://notebook-ytkr.onrender.com/api/auth/createuser", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
