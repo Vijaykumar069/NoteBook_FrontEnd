@@ -4,7 +4,7 @@ export const NoteContext = createContext()
 
 export function NoteProvider(props) {
 
-    const HOST = "https://notebook-backend-76vn.onrender.com"
+    const HOST = "https://notebook-ytkr.onrender.com"
 
     const initialNotes = []
 
