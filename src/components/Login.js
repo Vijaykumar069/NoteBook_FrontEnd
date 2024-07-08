@@ -36,7 +36,7 @@ function Login() {
         validationSchema: loginSchema,
         onSubmit: async (values) => {
             try {
-                const response = await fetch("https://notebook-backend-76vn.onrender.com/api/auth/login", {
+                const response = await fetch("https://notebook-ytkr.onrender.com/api/auth/login", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
