@@ -85,7 +85,8 @@
 // }
 
 // export default Notes;
-
+                    // <img className="img-fluid ms-5 mt-3" src={empty} alt="empty" style={{ width: "30%", opacity: "1.0" }} />
+                    // <img className="img-fluid ms-5 mt-3" src={empty3} alt="empty" style={{ width: "30%", opacity: "1.0" }} />
 import React, { useContext, useEffect } from 'react';
 import { NoteContext } from '../context/notes/NoteContext';
 import NoteItem from './NoteItem';
@@ -115,10 +116,9 @@ function Notes() {
             <h1 className="display-6">Your Notes: </h1>
             {(!Array.isArray(notes) || notes.length === 0) && 
                 <div className="d-flex">
-                    <p style={{ position: "absolute", left: "35%", bottom: "-10%" }}>Create your first note :) !!!</p>
-                    // <img className="img-fluid ms-5 mt-3" src={empty} alt="empty" style={{ width: "30%", opacity: "1.0" }} />
-                    // <img className="img-fluid ms-5 mt-3" src={empty3} alt="empty" style={{ width: "30%", opacity: "1.0" }} />
-                    <img className="img-fluid ms-5 mt-3" src={empty1} alt="empty" style={{ width: "100%", opacity: "1.0" }} />
+                    <p style={{ position: "absolute", left: "35%", bottom: "-10%" top:"30%" }}>Create your first note :) !!!</p>
+
+                    <img className="img-fluid ms-5 mt-3" src={empty1} alt="empty" style={{ width: "75%", opacity: "1.0" }} />
                 </div>
             }
             {Array.isArray(notes) && notes.map(note => 
