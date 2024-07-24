@@ -27,7 +27,7 @@ function Notes() {
             <h1 className="display-6">Your Notes: </h1>
             {(!Array.isArray(notes) || notes.length === 0) && 
                 <div className="d-flex">
-                    <p style={{ position: "absolute", left: "35%", bottom: "-10%" top:"30%" }}>Create your first note :) !!!</p>
+                    <p style={{ position: "absolute", left: "35%", bottom: "-10%", top:"30%" }}>Create your first note :) !!!</p>
                     <img className="img-fluid ms-5 mt-3" src={empty1} alt="empty" style={{ width: "75%", opacity: "1.0" }} />
                 </div>
             }
